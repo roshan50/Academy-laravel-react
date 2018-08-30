@@ -1,0 +1,107 @@
+@media screen and (max-width: 450px){
+  .banner__image img{
+    width: 100%;
+  }
+  .banner__context{
+    width: 100%;
+  }
+  .banner__text{
+    font-size: 16px;
+  }
+  .banner__sign img{
+    width: 90%;
+  }
+  .border-lg-left{
+    border-left: none;
+  }
+
+}
+/*.. this is for screen size upper than 576px ...*/
+@media screen and (min-width: 576px) {
+  .cat--card{
+    width: 190px;
+  }
+}
+
+/*.. this is for screen size upper than 768px ...*/
+@media screen and (min-width: 768px)  {
+
+}
+
+/*.. this is for screen size upper than 980px ...*/
+@media screen and (min-width: 992px) {
+  .nav-link{
+    font-size: 13px;
+  }
+  .nav-item{
+    padding-left: 0.5rem;
+  }
+  .navbar-nav{
+    margin-right: 50px;
+  }
+  .navbar-nav .mdi:before{
+    margin-left: 0;
+  }
+  .banner__context{
+    //background-image: url("/images/banner.jpg") no-repeat ;
+  }
+  .border-lg-left{
+    border-left: 1px solid gainsboro;
+  }
+  .course-video{
+    width: 880px;
+    height: 540px;
+  }
+  .video-list{
+    margin-right: 10px;
+  }
+  .video-list-group{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 448px;
+    flex-direction: column;
+    direction: ltr;
+  }
+  .course-about{
+    width: 71%;
+    padding-left: 40px;
+  }
+  .course-info{
+    width: 28%;
+    border-top: none;
+  }
+  .btn-purchase{
+    margin-right: 0;
+  }
+  .courses{
+    border-top: none;
+    padding-top: 0;
+  }
+  .level__header{
+    width: 15%;
+    padding-bottom: 25px;
+    justify-content: space-between;
+  }
+  .level__list{
+    width: 45%;
+  }
+  .teacher{
+    padding: 30px;
+  }
+  .course-level__body{
+    padding-right: 20px;
+  }
+}
+
+/*.. this is for screen size upper than 1200px ...*/
+@media screen and (min-width: 1200px) {
+  .nav-link{
+    font-size: 14px;
+  }
+  .nav-item{
+    padding-left: 1.01rem;
+  }
+  .navbar-nav{
+    margin-right: 130px;
+  }
+}
