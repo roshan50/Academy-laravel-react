@@ -6,7 +6,7 @@ class Category_Card extends Component {
             backgroundColor: '#'+this.props.obj.color
         };
         return (
-            <div className="cat--card carousel-cell">
+            <div >
                 <div className="cat--card__bar" style={bar_style}></div>
                 <div>
                     <div className={`cat--card__icon mdi mdi-${ this.props.obj.icon }`}></div>

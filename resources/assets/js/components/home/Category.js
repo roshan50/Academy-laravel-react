@@ -19,7 +19,7 @@ class Category extends Component {
     categoryCard(){
         if(this.state.categories instanceof Array){
             return this.state.categories.map(function(object, i){
-                return <Category_Card obj={object} key={i} />;
+                return <div className="cat--card carousel-cell"><Category_Card obj={object} key={i} /></div>;
             })
         }
     }
@@ -43,6 +43,21 @@ class Category extends Component {
                 </div>
                 <div className="main-carousel d-flex  content" data-flickity='{ "cellAlign": "left", "contain": true }'>
                     {this.categoryCard()}
+
+                    {/*<div className="cat--card carousel-cell">*/}
+                        {/*<div className="cat--card__bar"></div>*/}
+                        {/*<div>*/}
+                            {/*<div className={`cat--card__icon mdi mdi-android`}></div>*/}
+                            {/*<div>ccc</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="cat--card carousel-cell">*/}
+                        {/*<div className="cat--card__bar"></div>*/}
+                        {/*<div>*/}
+                            {/*<div className={`cat--card__icon mdi mdi-android`}></div>*/}
+                            {/*<div>ddd</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         )

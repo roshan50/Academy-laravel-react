@@ -15,15 +15,17 @@ export default class Login_Page extends Component {
                             </div>
                         </div>
 
-                        <Login/>
+                        <div className="login-pannel d-flex flex-column flex-lg-row justify-content-center">
+                            <Login/>
 
-                        <div className="col-lg-1 d-none d-lg-block">
-                            <div className="d-flex justify-content-center"><div className="login-border-left"></div></div>
-                            <div className="or text-center">یا</div>
-                            <div className="d-flex justify-content-center"><div className="login-border-left"></div></div>
+                            <div className="col-lg-1 d-none d-lg-block">
+                                <div className="d-flex justify-content-center"><div className="login-border-left"></div></div>
+                                <div className="or text-center">یا</div>
+                                <div className="d-flex justify-content-center"><div className="login-border-left"></div></div>
+                            </div>
+
+                            <Register/>
                         </div>
-
-                        <Register/>
 
                     </div>
                 </div>

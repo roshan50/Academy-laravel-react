@@ -2,6 +2,28 @@ import React, {Component} from 'react';
 import Video_Card from "./Video_Card";
 
 export default class Video_Panel extends Component{
+    componentDidMount() {
+        require('nicescroll');
+        $("#scroll").niceScroll({
+            cursorcolor:"#fe5b57",
+            cursorwidth:"6px",
+            background:"rgba(20,20,20,0.3)",
+            cursorborder:"1px solid #fe5b57",
+            cursorborderradius:5,
+            touchbehavior:true,
+            preventmultitouchscrolling: false,
+            cursordragontouch: true,
+            autohidemode: false
+        });
+        var makescrollfromTop = function(){
+            $("#scroll").scrollTop(100);
+            $("#scroll").scrollLeft(200);
+        }
+        makescrollfromTop();
+    }
+    componentWillUnmount() {
+        $("#scroll").getNiceScroll().hide();
+    }
     render(){
         return(
             <div className="container-fluid bg-primary">

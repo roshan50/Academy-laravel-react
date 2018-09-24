@@ -1,6 +1,26 @@
 import React, { Component } from 'react';
 
 export default class Profile extends Component {
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {title: '', cost: ''};
+    // }
+    // componentDidMount(){
+    //     axios.get('http://localhost:8000/items')
+    //         .then(response => {
+    //             this.setState({ items: response.data });
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //         })
+    // }
+    // tabRow(){
+    //     if(this.state.items instanceof Array){
+    //         return this.state.items.map(function(object, i){
+    //             return <TableRow obj={object} key={i} />;
+    //         })
+    //     }
+    // }
     render() {
         return (
             <div className="container-fluid d-flex justify-content-center">
@@ -79,26 +99,29 @@ export default class Profile extends Component {
                                 <h6 className="my-course__header mdi mdi-book-open-variant text-secondary">دوره های خریداری شده</h6>
                                 <div className="my-course__body">
                                     <table>
-                                        <tr>
-                                            <th>کد دوره</th>
-                                            <th>نام دوره</th>
-                                            <th>تاریخ خرید</th>
-                                            <th>مبلغ کل</th>
-                                            <th>وضعیت</th>
-                                        </tr>
+                                        <thead>
+                                            <tr>
+                                                <th>کد دوره</th>
+                                                <th>نام دوره</th>
+                                                <th>تاریخ خرید</th>
+                                                <th>مبلغ کل</th>
+                                                <th>وضعیت</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
                                         <tr>
                                             <td>154558</td>
                                             <td>آموزش مقدماتی فتوشاپ</td>
                                             <td>1396/09/06</td>
                                             <td>158/296/500 ریال</td>
-                                            <td className="d-flex justify-content-center"><div className="badge badge-warning">تکمیل شده</div></td>
+                                            <td className="d-flex justify-content-center"><div className="badge badge-warning">انتظار پرداخت</div></td>
                                         </tr>
                                         <tr>
                                             <td>510054105</td>
                                             <td>آموزش C# مقدماتی</td>
                                             <td>1396/09/06</td>
                                             <td>158/296/500 ریال</td>
-                                            <td className="d-flex justify-content-center"><div className="badge badge-success">تکمیل شده</div></td>
+                                            <td className="d-flex justify-content-center"><div className="badge badge-success">در حال آموزش</div></td>
                                         </tr>
                                         <tr>
                                             <td>45204524</td>
@@ -121,6 +144,7 @@ export default class Profile extends Component {
                                             <td>158/296/500 ریال</td>
                                             <td className="d-flex justify-content-center"><div className="badge badge-dark">تکمیل شده</div></td>
                                         </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>

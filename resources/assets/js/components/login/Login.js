@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 export default class Login extends Component {
     render() {
         return (
-            <div className="login-pannel d-flex flex-column flex-lg-row justify-content-center">
                 <div className="login col-lg-5 d-flex flex-column align-items-center">
                     <h1 className="text-center">ورود به سامانه</h1>
                     <div className="d-flex input-div">
@@ -20,7 +19,6 @@ export default class Login extends Component {
                     </div>
                     <button className="bg-secondary mdi mdi-account-key btn-login">ورود به سامانه</button>
                 </div>
-            </div>
         )
     }
 }
